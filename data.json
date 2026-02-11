@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "What is my favorite fruit?",
+      "options": ["Orange", "Apple", "Kiwi", "Banana"],
+      "answer": "Orange"
+    },
+    {
+      "question": "When did we first meet?",
+      "options": ["2018", "2021", "2022", "2023"],
+      "answer": "2018"
+    },
+    {
+      "question": "What is my favorite colour?",
+      "options": ["Red", "Black","Anything dark", "Anything light"],
+      "answer": "Red"
+    },
+    {
+      "question": "What is my current job title?",
+      "options": ["Full Stack Engineer", "Backend Engineer","Frontend Engineer", "CEO"],
+      "answer": "Full Stack Engineer"
+    }
+  ],
+  "proposalLines": [
+    "You completed all the challenges...",
+    "You unlocked my heart...",
+    "There’s only one final question left..."
+  ]
+}

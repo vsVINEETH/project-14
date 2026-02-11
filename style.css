@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+/* App Card */
+.app {
+  width: 95%;
+  max-width: 420px;
+  height: 90vh;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+/* Screens */
+.screen {
+  display: none;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.screen.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Typography */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Buttons */
+.primary-btn {
+  background: white;
+  color: #ff4d6d;
+  border: none;
+  padding: 12px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  transform: scale(1.05);
+}
+
+.secondary-btn {
+  background: rgba(255,255,255,0.3);
+  border: none;
+  padding: 12px;
+  border-radius: 50px;
+  color: white;
+}
+
+/* Love Meter */
+.love-meter {
+  width: 100%;
+  height: 12px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+}
+
+#progress {
+  height: 100%;
+  width: 0%;
+  background: white;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+/* Options */
+.options button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255,255,255,0.3);
+  color: white;
+}
+
+/* Mini Game */
+#gameArea {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+/* Proposal */
+.proposal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.final-question {
+  font-size: 22px;
+  margin-top: 10px;
+  display: none;
+}
+
+/* Confetti */
+#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#noBtn {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.teddy {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+  opacity: 0.9;
+  animation: floatTeddy 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.dance {
+    height: 53%;
+    width: 53%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes floatTeddy {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+
+.feedback {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #ff4d6d;
+  text-align: center;
+}
+
+.retry-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.retry-actions button {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  background: #ffe6ec;
+  color: #ff4d6d;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.retry-actions button:active {
+  transform: scale(0.95);
+}
+

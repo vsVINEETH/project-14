@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Be My Valentine?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+  <img src="asset/teddy.gif" class="teddy" />
+  <div class="floating-hearts"></div>
+    <!-- Welcome -->
+    <div id="welcome" class="screen active">
+      <img src="asset/dance.gif" class="dance">
+      <h1 class="title">Hey You 👀</h1>
+      <p class="subtitle">
+        I have something important to ask you... ❤️
+      </p>
+      <button class="primary-btn" onclick="startQuiz()">Start Mission 💌</button>
+    </div>
+
+    <!-- Quiz -->
+    <div id="quiz" class="screen">
+      <div class="love-meter">
+        <div id="progress"></div>
+      </div>
+
+      <h2 id="question"></h2>
+      <div id="options" class="options"></div>
+      <p id="feedback" class="feedback"></p>
+     <div id="retryActions" class="retry-actions"></div>
+
+    </div>
+
+    <!-- Mini Game -->
+    <div id="miniGame" class="screen">
+      <h2>Catch 10 Hearts ❤️</h2>
+      <p class="score">Score: <span id="gameScore">0</span></p>
+      <div id="gameArea"></div>
+    </div>
+
+    <!-- Proposal -->
+    <div id="proposal" class="screen">
+      <div id="typewriter"></div>
+      <img src="asset/kiss.gif" id="kiss" hidden/>
+      <h1 class="final-question">Will You Be My Valentine? 💍</h1>
+
+      <div class="proposal-buttons">
+        <button id="yesBtn" class="primary-btn">YES 💖</button>
+        <button id="noBtn" class="secondary-btn">NO 🙈</button>
+      </div>
+    </div>
+
+  </div>
+
+  <canvas id="confetti"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
