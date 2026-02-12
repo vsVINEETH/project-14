@@ -123,7 +123,7 @@ function createHeart() {
   heart.style.position = "absolute";
   heart.style.left = Math.random() * (gameArea.clientWidth - 30) + "px";
   heart.style.top = "-30px";
-  heart.style.fontSize = "24px";
+  heart.style.fontSize = "35px";
 
   gameArea.appendChild(heart);
 
