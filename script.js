@@ -113,7 +113,7 @@ function startMiniGame() {
 
   const interval = setInterval(() => {
     createHeart();
-  }, 1000);
+  }, 1500);
 
 function createHeart() {
   const gameArea = document.getElementById("gameArea");
